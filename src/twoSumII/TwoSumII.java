@@ -11,7 +11,7 @@ if the sum is smaller than the target, we shift the left because it needs to get
 if the sum is larger we shift the right
 
  */
-package TwoSumII;
+package twoSumII;
 
 public class TwoSumII {
   

@@ -20,7 +20,7 @@
  
 */
 
-package MergedTwoSortedLists;
+package mergedTwoSortedLists;
 
 public class MergedTwoSortedLists {
 

@@ -26,7 +26,7 @@ and keep on looping until b becomes 0
 
  */
 
-package SumOfTwoIntegers;
+package sumOfTwoIntegers;
 
 public class Solution {
   public int getSum(int a, int b) {

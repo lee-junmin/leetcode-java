@@ -16,7 +16,7 @@ Explanation: Two times will not conflict
 
  */
 
-package MeetingRoom;
+package meetingRoom;
 
 import java.util.ArrayList;
 import java.util.List;

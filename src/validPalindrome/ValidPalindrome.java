@@ -3,7 +3,7 @@ change everything to lowercase and take out the non alphanumerics
 then loop half way through while comparing from the end
  */
 
-package ValidPalindrome;
+package validPalindrome;
 
 public class ValidPalindrome {
   

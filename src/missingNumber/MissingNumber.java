@@ -1,4 +1,4 @@
-package MissingNumber;
+package missingNumber;
 
 public class MissingNumber {
 	

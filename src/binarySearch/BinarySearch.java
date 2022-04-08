@@ -14,7 +14,7 @@ don't forget to skip the mid index for the next loop (example. r = mid -1)
 
  */
 
-package BinarySearch;
+package binarySearch;
 
 // 0 1 2 3 4 5 6 7 8
 

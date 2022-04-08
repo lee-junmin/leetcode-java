@@ -1,4 +1,4 @@
-package MeetingRoom;
+package meetingRoom;
 
 public class Interval {
 	int start, end;

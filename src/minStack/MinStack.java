@@ -13,7 +13,7 @@ The reason why we need to track in a second stack not a single variable,
 is because it will change as we  pop elements off
 
  */
-package MinStack;
+package minStack;
 
 import java.util.Stack;
 

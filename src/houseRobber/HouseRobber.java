@@ -1,4 +1,4 @@
-package HouseRobber;
+package houseRobber;
 import java.util.Arrays;
 
 public class HouseRobber {

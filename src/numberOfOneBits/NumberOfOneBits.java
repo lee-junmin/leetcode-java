@@ -1,4 +1,4 @@
-package NumberOfOneBits;
+package numberOfOneBits;
 /*
 
 use bit shifting to move to the next position
