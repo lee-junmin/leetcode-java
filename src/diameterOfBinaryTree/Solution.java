@@ -37,7 +37,7 @@ Other Approaches
 
 package diameterOfBinaryTree;
 
-   
+  
   class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
       Status result = getStatus(root);

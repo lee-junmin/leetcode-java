@@ -7,7 +7,7 @@ the three components of TrieNode. find index of the TrieNode array with (charact
 
 
 MAIN IDEA
-The vanilla TrieNode should have three attributes
+The TrieNode should have three attributes
 1) the character
 2) the TrieNode array that holds children TrieNodes
 3) isEnd boolean
