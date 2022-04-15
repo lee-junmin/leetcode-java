@@ -24,6 +24,19 @@ re-assign a to a XOR b
 re-assign b to the carry value to be added
 and keep on looping until b becomes 0
 
+
+  0010 a
+  0011 b
+  ----
+  0001 (XOR) a
+ 00100 (AND and <<) b
+  ----
+ 00101 a
+00000  b when b is 0 the return a
+
+O(logb) O(1)
+
+
  */
 
 package sumOfTwoIntegers;
@@ -36,6 +49,14 @@ public class Solution {
       b = (temp & b) << 1;
     }
     return a;
+  }
+  
+  // recursive solution
+  public int getSum_r(int x, int y){
+    if (y == 0)
+      return x;
+    else
+      return getSum_r(x ^ y, (x & y) << 1);
   }
   
   

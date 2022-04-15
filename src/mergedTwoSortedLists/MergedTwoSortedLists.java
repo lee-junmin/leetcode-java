@@ -18,6 +18,15 @@
  and finally we return dummy.next
  
  
+ O(n) O(1)
+ 
+ recursive approach would be O(n) O(n)
+ 
+ run a recursive function with parameters,
+ the next node of the smaller element, and the other head.
+ The recursive function will return the next smaller
+ element linked with rest of the sorted element.
+ Now point the next of current element to that
 */
 
 package mergedTwoSortedLists;
@@ -54,11 +63,46 @@ public class MergedTwoSortedLists {
 	      return dummy.next;
 	      
 	    
-		 
-		 
-		 
-		 
 	 }
+	 
+	 //recursive solution
+	
+        /*
+         
+         list1: 1 --> 3
+         list2: 2 --> 4
+        
+        f(1,2) --> return 1
+            f(3,2) -->  return 2
+                f(4,3) --> return 3
+                    f(4,null) -> return 4
+        */
+	
+	
+	public ListNode mergeTwoLists_r(ListNode list1, ListNode list2) {
+		
+		if (list1 == null) return list2;
+		if (list2 == null) return list1;
+		
+		
+		// 1 --> (3) --> 5
+		// 2 --> (4) --> 8
+		if (list1.val < list2.val){
+			// list1 selected
+			list1.next = mergeTwoLists_r(list1.next, list2);
+			return list1;
+		} else {
+			// list2 selected
+			list2.next = mergeTwoLists_r(list2.next, list1);
+			return list2;
+		}
+		
+		
+		
+		
+	}
+	 
+	
 }
 
 	
