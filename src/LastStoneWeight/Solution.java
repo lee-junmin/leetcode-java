@@ -1,5 +1,8 @@
 package LastStoneWeight;
-
+/*
+*
+* building a heap from an array will take T O(nlogn) S O(n)
+* */
 import java.util.Comparator;
 import java.util.PriorityQueue;
 

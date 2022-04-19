@@ -1,5 +1,5 @@
 package cloneGraph;
-
+// T O(n) where n is V+E
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -33,4 +33,31 @@ class Solution {
     return map.get(node);
     
   }
+  
+  
+  // recursive dfs solution
+  
+  public Node cloneGraph_r(Node node) {
+    if (node == null) return null;
+    HashMap<Node,Node> unseenMap = new HashMap<>();
+    
+    return cloneNode(node,unseenMap);
+  }
+  
+  private Node cloneNode(Node node, HashMap<Node,Node> unseenMap){
+    if (unseenMap.containsKey(node)){
+      return unseenMap.get(node);
+    }
+    // if not contains we need to make a new node with all the connections
+    unseenMap.put(node,new Node(node.val));
+    
+    for (Node nei: node.neighbors) {
+      unseenMap.get(node).neighbors.add(cloneNode(nei,unseenMap));
+    }
+    
+    return unseenMap.get(node);
+    
+  }
+  
+  
 }
