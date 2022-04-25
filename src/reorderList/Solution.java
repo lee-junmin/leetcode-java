@@ -1,7 +1,14 @@
 package reorderList;
+// 1 --> 2 --> 3 -->
+// 5 --> 4 -->
+//
+// 1 --> 2 --> 3 -->
+// 4 -->
+//
 
 public class Solution {
   public void reorderList(ListNode head) {
+
     ListNode slow = head;
     ListNode fast = head.next;
     while (fast != null && fast.next != null){
@@ -18,7 +25,7 @@ public class Solution {
       second.next = prev;
       prev = second;
       second = temp;
-    }
+    } // prev will become the head
     
     ListNode first = head;
     second = prev;
