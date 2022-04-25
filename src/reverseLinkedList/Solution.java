@@ -2,6 +2,9 @@ package reverseLinkedList;
 
 /*
 
+      1 --> 2 --> 3 --> 4 -->
+      p     c     n
+ 
 where n is the number of nodes in the linked list
 iterative: T O(n) S O(1)
 recursive : T O(n) S O(n)
@@ -21,10 +24,10 @@ public class Solution {
     ListNode curr = head;
     
     while (curr != null) {
-      ListNode next = curr.next;
-      curr.next = prev;
-      prev = curr;
-      curr = next;
+      ListNode temp = curr.next; // temp store to move on
+      curr.next = prev; // main switch
+      prev = curr; // move on
+      curr = temp; // move on
     }
     
     return prev;
