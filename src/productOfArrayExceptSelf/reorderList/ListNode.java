@@ -1,4 +1,4 @@
-package reorderList;
+package productOfArrayExceptSelf.reorderList;
 
 public class ListNode {
   int val;

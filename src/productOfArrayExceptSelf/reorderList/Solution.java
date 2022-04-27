@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/reorderList/Solution.java
 package reorderList;
 // 1 --> 2 --> 3 -->
 // 5 --> 4 -->
@@ -5,6 +6,9 @@ package reorderList;
 // 1 --> 2 --> 3 -->
 // 4 -->
 //
+=======
+package productOfArrayExceptSelf.reorderList;
+>>>>>>> 2e25041ef6158910368db56f7eac12c675046411:src/productOfArrayExceptSelf/reorderList/Solution.java
 
 public class Solution {
   public void reorderList(ListNode head) {
