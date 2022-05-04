@@ -5,7 +5,7 @@ when push that bit 31-i times to the left and | it to the result
 
  */
 
-package reverseBits;
+package nthTribonacciNumber.reverseBits;
 
 public class ReverseBits {
   

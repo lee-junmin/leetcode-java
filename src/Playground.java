@@ -5,7 +5,18 @@ public class Playground {
   public static void main(String[] args){
     HashMap<Integer, ArrayList<Integer>> adjMap = new HashMap<>();
     adjMap.put(1, new ArrayList<>());
-    System.out.print(adjMap.get(1));
+    adjMap.put(2, new ArrayList<>());
+    for (int key:adjMap.keySet()){
+      System.out.println(key);
+    }
+  
+//    int[] arr = new int[5];
+    
+    
+    
+    
+    
+    //System.out.print(courseStatus[2]);
   }
  
   
