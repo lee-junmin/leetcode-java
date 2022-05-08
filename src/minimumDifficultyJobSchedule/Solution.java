@@ -20,7 +20,7 @@ public class Solution {
       for (int currIndex=currDay; currIndex <= len-(d  - currDay); currIndex++){
         int dayHigh = -1;
         int sumMin = Integer.MAX_VALUE;
-        for(int i=currIndex; i<=len-(d  -currDay); i++){
+        for(int i=currIndex; i<=len-(d - currDay); i++){
           dayHigh = Math.max(dayHigh, jobDifficulty[i]);
           sumMin = Math.min(sumMin,dayHigh + memo[currDay+1][i+1]);
         }
