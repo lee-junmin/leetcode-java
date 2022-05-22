@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Playground {
   
@@ -9,14 +10,6 @@ public class Playground {
     for (int key:adjMap.keySet()){
       System.out.println(key);
     }
-  
-//    int[] arr = new int[5];
-    
-    
-    
-    
-    
-    //System.out.print(courseStatus[2]);
   }
  
   
