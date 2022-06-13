@@ -28,7 +28,6 @@ public class NumberOfOneBits {
 //      }
       // the below line can replace the if statement above
       result += n % 2;
-      
        n >>= 1;
     }
     return result;
