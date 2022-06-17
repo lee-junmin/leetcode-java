@@ -1,28 +1,30 @@
 package plusOne;
+
+import java.util.Arrays;
+// TC O(n)
+// SC O(n) but if we count the worst case array as an output
+// space complexity will be O(1)
+
+
 class Solution {
     public int[] plusOne(int[] digits) {
         int len = digits.length;
-        int i = len - 1;
-        while (digits[i] == 9){
-            digits[i] = 0;
-            // 0000
-            if (i == 0){
-                return generateArray(len+1);
+        int indexToIncrement = len - 1;
+
+        while (digits[indexToIncrement] == 9){
+            digits[indexToIncrement] = 0;
+            indexToIncrement--;
+            if (indexToIncrement < 0){
+                int[] newDigits = new int[len+1];
+                Arrays.fill(newDigits,0);
+                newDigits[0] = 1;
+                return newDigits;
             }
-            i--;
+
         }
-        digits[i]++;
-        
+
+        digits[indexToIncrement]++;
         return digits;
+
     }
-    
-    private int[] generateArray(int n){
-        int[] res = new int[n];
-        res[0] = 1;
-        for (int i=1; i<n; i++){
-            res[i] = 0;
-        }
-        return res;
-    }
-    
 }
