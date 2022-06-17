@@ -1,13 +1,18 @@
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.List;
 
 public class Playground {
 
   public static void main(String[] args){
-    String s = "12";
-    String len = String.valueOf(s);
-    char c = 'd';
-    System.out.println(len+";"+c);
+
+    List<Integer> list = new ArrayList<>();
+    list.add(1);
+    list.add(2);
+    Integer[] arr = list.toArray(new Integer[0]);
+    System.out.println(arr.getClass().getName());
+    System.out.println(arr[0]);
+    int[] test = new int[]{1,2,3};
+    System.out.println(test.getClass().getName());
 
 
   }
