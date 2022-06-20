@@ -1,5 +1,8 @@
 package maxConsecutiveOnes;
 
+// TC O(n) where n is the length of nums
+// SC O(1)
+
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {
         int maxSoFar = 0;
