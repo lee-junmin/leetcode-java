@@ -1,4 +1,4 @@
-package FindTheMiddleIndexInArray;
+package findTheMiddleIndexInArray;
 //TC O(n)
 // SC O(1)
 public class Solution {

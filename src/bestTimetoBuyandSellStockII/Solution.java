@@ -1,4 +1,4 @@
-package BestTimetoBuyandSellStockII;
+package bestTimetoBuyandSellStockII;
 
 class Solution {
     /*
