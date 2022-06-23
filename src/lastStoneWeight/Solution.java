@@ -1,4 +1,4 @@
-package LastStoneWeight;
+package lastStoneWeight;
 /*
 *
 * building a heap from an array will take T O(nlogn) S O(n)
