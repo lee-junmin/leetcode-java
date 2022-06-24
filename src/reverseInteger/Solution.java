@@ -12,7 +12,8 @@ class Solution {
         }
 
         while (x > 0){
-            if (result > (int)Math.pow(2,31) / 10) return 0;
+            //if (result > (int)Math.pow(2,31) / 10) return 0;
+            if (result > Integer.MAX_VALUE / 10) return 0;
             result *= 10;
             result += x % 10;
             x /= 10;
