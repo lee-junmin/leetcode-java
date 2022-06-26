@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-package longestRepeatingCharacterReplacement;
-
 import java.util.Collections;
 import java.util.HashMap;
 

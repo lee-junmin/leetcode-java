@@ -19,8 +19,8 @@ Explanation: Two times will not conflict
 package meetingRoom;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Collections;
+import java.util.List;
 
 public class MeetingRoom {
 /*

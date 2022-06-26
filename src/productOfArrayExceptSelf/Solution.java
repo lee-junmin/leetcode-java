@@ -1,7 +1,5 @@
 package productOfArrayExceptSelf;
 
-import java.util.Arrays;
-
 <<<<<<< HEAD
 // T O(n)   S O(1)
 

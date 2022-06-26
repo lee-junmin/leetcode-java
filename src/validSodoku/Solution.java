@@ -1,7 +1,6 @@
 package validSodoku;
 
 import java.util.HashSet;
-import java.util.Set;
 
 class Solution {
     public boolean isValidSudoku(char[][] board) {
